@@ -2,7 +2,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit
+  Content Design Prototype
 {% endblock %}
 
 {% block content %}
@@ -10,23 +10,34 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">
-        The GOV.UK Prototype Kit
-        <span class="govuk-caption-xl">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
-      <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
-      </p>
+        Content Design Prototype</h1>
+        <h3 class="govuk-heading-m">Content Pattern Library</h3>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>
+            <a href="/content-pattern-library/sign-in">Sign in</a>
+          </li>
 
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
-      </p>
+          <li>
+            <a href="obliged-entity-type" class="govuk-link govuk-link--no-visited-state">Pattern 2</a>
+          </li>
+          <li>
+            <a href="obliged-entity-details-organisation" class="govuk-link govuk-link--no-visited-state">Pattern 3</a>
+          </li>
+          <li>
+            <a href="obliged-entity-details-organisation" class="govuk-link govuk-link--no-visited-state">Error Messages</a>
+          </li>
 
-      <h2 class="govuk-heading-m">About this page</h2>
+        </ul>
+        <h3 class="govuk-heading-m">Personal Practise</h3>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>
+            <a href="emails/confirmation-email">Sophie</a>
+          </li>
+          <li>
+            <a href="emails/outcome">Sheena</a>
+          </li>
+        </ul>
 
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
-
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
 
       <h2 class="govuk-heading-m">Examples and documentation</h2>
 
