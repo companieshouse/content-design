@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+{% block pageTitle %}
+  Authentication code
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+    <form action="/company-lookup/company-number" method="post">
+
+
+<div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" data-module="govuk-error-summary">
+  <h2 class="govuk-error-summary__title" id="error-summary-title">
+    There is a problem
+  </h2>
+  <div class="govuk-error-summary__body">
+    <ul class="govuk-list govuk-error-summary__list">
+      <li>
+        <a href="#passport-issued-day">Enter the correct company authentication code</a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+<div class="govuk-form-group govuk-form-group--error">
+  <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="event-name">
+      Enter the company authentication code
+    </label>
+
+  </h1>
+  <div id="event-name-hint" class="govuk-hint">
+  This is a 6 character code issued by us to each company. You need the code to authorise online filings for COMPANY NAME.
+
+  <p id="event-name-error" class="govuk-error-message">
+
+    <span class="govuk-visually-hidden">Error:</span> Enter the correct company authentication code
+  </p>
+
+
+  <input class="govuk-input govuk-date-input__input govuk-input--width-10 govuk-input--error" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint event-name-error">
+</div>
+
+{{ govukDetails({
+  summaryText: "I do not have an authentication code",
+  html: "<p>To file online for this company, you’ll need to <a target='blank' href='https://www.gov.uk/guidance/company-authentication-codes-for-online-filing'>request an authentication code (opens in a new tab)</a>. We’ll then send the code to the company’s registered office address by post. It can take up to 5 days to arrive.<p>"
+ }) }}
+{{ govukButton({
+  text: "Continue"
+}) }}
+</form>
+</div>
+</div>
+{% endblock %}
