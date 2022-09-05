@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Service unavailable – {{ serviceName }} – GOV.UK
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">You’ll have to start again  </h1>
+      <p>For your security, you’ll have to start again because you have not used the service for 60 minutes. </p>
+
+      <p>We have not saved your information. </p>
+
+<p><a href="/register/sign-in">Start again</a> to upload a document to Companies House.</p>
+
+    </div>
+  </div>
+
+{% endblock %}
