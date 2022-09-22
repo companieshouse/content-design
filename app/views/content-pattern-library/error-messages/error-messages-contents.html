@@ -1,0 +1,73 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Content Design Prototype
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h2 class="govuk-heading-l">
+        Error messages</h2>
+                <h3 class="govuk-heading-m">Sign in</h3>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>
+            <a href="/content-pattern-library/error-messages/sign-in-errors/sign-in-error-no-email">No email address entered</a>
+          </li>
+          <li>
+            <a href="/content-pattern-library/error-messages/sign-in-errors/sign-in-error-no-password">No password entered</a>
+          </li>
+
+          <li>
+            <a href="/content-pattern-library/error-messages/sign-in-errors/sign-in-error-no-email-no-password" class="govuk-link govuk-link--no-visited-state">No email address or password entered</a>
+          </li>
+          <li>
+            <a href="/content-pattern-library/error-messages/sign-in-errors/sign-in-error-incorrect-email-format" class="govuk-link govuk-link--no-visited-state">Email entered in incorrect format</a>
+          </li>
+          <li>
+            <a href="/content-pattern-library/error-messages/sign-in-errors/sign-in-error-4-attempts-left" class="govuk-link govuk-link--no-visited-state">Incorrect credentials - 4 attempts left</a>
+          </li>
+          <li>
+            <a href="/content-pattern-library/error-messages/sign-in-errors/sign-in-error-3-attempts-left" class="govuk-link govuk-link--no-visited-state">Incorrect credentials - 3 attempts left</a>
+          </li>
+          <li>
+            <a href="/content-pattern-library/error-messages/sign-in-errors/sign-in-error-2-attempts-left" class="govuk-link govuk-link--no-visited-state">Incorrect credentials - 2 attempts left</a>
+          </li>
+          <li>
+            <a href="/content-pattern-library/error-messages/sign-in-errors/sign-in-error-1-attempt-left" class="govuk-link govuk-link--no-visited-state">Incorrect credentials - 1 attempt left</a>
+          </li>
+          <li>
+            <a href="/content-pattern-library/error-messages/sign-in-errors/sign-in-error-account-locked" class="govuk-link govuk-link--no-visited-state">Incorrect credentials - account locked</a>
+          </li>
+    </ul>
+
+          <h3 class="govuk-heading-m">Company number</h3>
+  <ul class="govuk-list govuk-list--bullet">
+
+          <li>
+            <a href="/content-pattern-library/error-messages/company-number-errors/company-number-error-no-number" class="govuk-link govuk-link--no-visited-state">No company number entered</a>
+          </li>
+          <li>
+            <a href="/content-pattern-library/error-messages/company-number-errors/company-number-error-characters" class="govuk-link govuk-link--no-visited-state">Incorrect number of characters entered (placeholder content)</a>
+
+          </li>
+
+        </ul>
+
+              <h3 class="govuk-heading-m">Authentication code</h3>
+      <ul class="govuk-list govuk-list--bullet">
+
+              <li>
+                <a href="/content-pattern-library/error-messages/authentication-code-errors/auth-code-error-no-code" class="govuk-link govuk-link--no-visited-state">No authentication code entered</a>
+              </li>
+              <li>
+                <a href="/content-pattern-library/error-messages/authentication-code-errors/auth-code-error-wrong-code" class="govuk-link govuk-link--no-visited-state">Incorrect authentication code entered</a>
+              </li>
+
+
+</ul>
+
+
+{% endblock %}
