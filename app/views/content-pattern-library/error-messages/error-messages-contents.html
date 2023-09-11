@@ -96,10 +96,15 @@
           <a href="/content-pattern-library/error-messages/nationality-errors/nationality-missing" class="govuk-link govuk-link--no-visited-state">Nationality missing</a>
         </li>
         <li>
-          <a href="/content-pattern-library/error-messages/nationality-errors/50-characters" class="govuk-link govuk-link--no-visited-state">Multiple nationalities more than 50 characters</a> 
-          <br>Note: This is a technical constraint - CHIPS currently limits multiple nationalities to 50 characters only.
-          <br>For example, a user enters 'British Virgin Islander' as their first nationality, and 'Citizen of Bosnia and Herzegovina' as their second nationality. This would fire an error message because when combined, they are 56 characters in total. Obviously this is not a user error, but unfortunately we still need to show an error message as they will not be able to proceed.
+          <a href="/content-pattern-library/error-messages/nationality-errors/49-characters" class="govuk-link govuk-link--no-visited-state">Dual nationalities more than 49 characters</a> 
+          
         </li>
+        <li>
+          <a href="/content-pattern-library/error-messages/nationality-errors/48-characters" class="govuk-link govuk-link--no-visited-state">Multiple nationalities more than 48 characters</a> 
+          <br>Note: This is a technical constraint - CHIPS currently limits multiple nationalities to 50 characters only (including spaces and punctuation). Once the nationalities been sent to CHIPS, it adds a comma between the nationalities, but the user wouldn't know this.
+          <br>For example, a user enters 'British Virgin Islander' as their first nationality, and 'Citizen of Bosnia and Herzegovina' as their second nationality. This would fire an error message because when combined, they are 57 characters in total, including the spaces and comma. <br>Obviously this is not a user error, but unfortunately we still need to show an error message as they will not be able to proceed.
+        </li>
+        
 </ul>
 
 <h3 class="govuk-heading-m">Date of birth</h3>

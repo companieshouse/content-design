@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block pageTitle %}
+  Company number
+{% endblock %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+    <form action="/company-lookup/company-number" method="post">
+
+
+<div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" data-module="govuk-error-summary">
+  <h2 class="govuk-error-summary__title" id="error-summary-title">
+    There is a problem
+  </h2>
+  <div class="govuk-error-summary__body">
+    <ul class="govuk-list govuk-error-summary__list">
+      <li>
+        <a href="#passport-issued-day">For technical reasons, we are currently unable to accept multiple nationalities with a total of more than 50 characters</a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+<div class="govuk-form-group govuk-form-group--error">
+  <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--xl" for="event-name">
+      What is your second nationality?
+    </label>
+
+  </h1>
+ 
+
+  <p id="event-name-error" class="govuk-error-message">
+
+    <span class="govuk-visually-hidden">Error:</span> For technical reasons, we are currently unable to accept multiple nationalities with a total of more than 50 characters
+  </p>
+
+
+  <input class="govuk-input govuk-date-input__input govuk-input--width-20 govuk-input--error" id="event-name" name="event-name" type="text" value="Citizen of Bosnia and Herzegovina" aria-describedby="event-name-hint event-name-error">
+</div>
+
+
+{{ govukButton({
+  text: "Continue"
+}) }}
+</form>
+</div>
+</div>
+{% endblock %}
