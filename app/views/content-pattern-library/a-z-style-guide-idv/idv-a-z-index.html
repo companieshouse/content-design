@@ -1,0 +1,363 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="A-Z" %}
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      {{ govukPanel({
+        titleText: "Companies House IDV style guide",
+        html: "",
+        classes: "blue"
+      }) }}
+
+
+<div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds-from-desktop">
+          <h2 class="govuk-heading-m">A to Z</h2>
+          <p class="govuk-body-l">The Companies House IDV style guide covers style, spelling and grammar conventions for all IDV content published on Companies House, arranged alphabetically.</p>
+        </div>
+      </div>
+
+{% from "govuk/components/accordion/macro.njk" import govukAccordion %}
+
+{{ govukAccordion({
+  id: "accordion-default",
+  items: [
+    {
+      heading: {
+        text: "A"
+      },
+      content: {
+        html: '
+        <p class="govuk-body"><strong>Anti-Money Laundering (AML) membership number  </strong></p><p class="govuk-body">Title case for Anti-Money Laundering (AML), lower case for membership number. Explain the acronym at first use, then abbreviate to AML membership number. </p>
+        <br>
+        <p class="govuk-body"><strong>Anti-Money Laundering (AML) registration</strong></p><p class="govuk-body">Title case for Anti-Money Laundering (AML), lower case for registration. Explain the acronym at first use, then abbreviate to AML registration.</p>
+        <br>
+        <p class="govuk-body"><strong>appointed day</strong></p><p class="govuk-body">Do not use &#8216appointed day&#8217. Instead, either display the date (if you can), or explain that it is the company&#8217s confirmation statement date. </p>
+        <br>
+        <p class="govuk-body"><strong>authorised agent account</strong></p><p class="govuk-body">Lower case. </p>
+        <br>
+        <p class="govuk-body"><strong>authorised agent number</strong></p><p class="govuk-body">Lower case. </p>
+        <br>
+        <p class="govuk-body"><strong>Authorised Corporate Service Provider (ACSP) </strong></p><p class="govuk-body">See ‘Companies House authorised agent’. <strong class="govuk-tag govuk-tag--yellow">
+          TBC
+        </strong> </p>'
+      }
+    },
+
+
+    {
+      heading: {
+        text: "B"
+      },
+      content: {
+        html: ' 
+        <p class="govuk-body"><strong>biometric ID</strong></p>
+        <p class="govuk-body">Lower case for &#8216biometric&#8217. Upper case for &#8216ID&#8217.</p>
+        <br>
+        <p class="govuk-body"><strong>biometric passport</strong></p>
+        <p class="govuk-body">Lower case.</p>'
+      }
+    },
+
+
+    {
+      heading: {
+        text: "C"
+      },
+      content: {
+        html: ' <p class="govuk-body"><strong>Companies House authorised agent <strong class="govuk-tag govuk-tag--yellow">
+          TBC
+        </strong> </strong></p>
+        <p class="govuk-body">Title case for Companies House, lower case for authorised agent. Can be shortened to ‘authorised agent’ after being used the first time. </p>
+        <p class="govuk-body">Authorised agents are referred to in legislation as Authorised Corporate Service Providers (ACSPs). Where possible, use ‘Companies House authorised agent’ instead. </p>
+        <p class="govuk-body">When using for the first time, you could say: <br>…Companies House authorised agent. This is also known as an Authorised Corporate Service Provider (ACSP).<br> </p>
+        <p class="govuk-body"><strong>Companies House personal code </strong></p>
+        <p class="govuk-body">Title case for Companies House, lower case for personal code. Never use UVID. </p><p class="govuk-body">Can be shortened to ‘personal code’ after being used the first time.  </p>'
+      }
+    },
+    {
+      heading: {
+        text: "D"
+      },
+      content: {
+        html: ' <p class="govuk-body"><strong> </strong></p>
+        <p class="govuk-body"> </p>'
+      }
+    },
+    {
+      heading: {
+        text: "E"
+      },
+      content: {
+        html: ' <p class="govuk-body"><strong> </strong></p>
+        <p class="govuk-body"> </p>'
+      }
+    },
+    {
+      heading: {
+        text: "F"
+      },
+      content: {
+        html: ' <p class="govuk-body"><strong>filer</strong><br></p>
+        <p class="govuk-body">Lowercase.</p><p class="govuk-body">How to describe it in content:  <br>
+
+          This is someone who files on behalf of someone else at Companies House.</p><p class="govuk-body">In the past, they were known as ‘presenters’. Where possible, use ‘filer’ or ‘someone who files for a company’ instead.</p>'
+      }
+    },
+    {
+      heading: {
+        text: "G"
+      },
+      content: {
+        html: ' <p class="govuk-body"><strong>GOV.UK One Login</strong></p>
+        <p class="govuk-body">Always use the full name: GOV.UK One Login. </p>
+        <p class="govuk-body">Use &#8216GOV.UK One Login&#8217 as a noun.</p>
+        <p>Avoid the word &#8216account&#8217 when referring to a user&#39s GOV.UK One Login. This:</p>
+      
+              <ul class="govuk-list govuk-list--bullet">
+                  <li>helps with account confusion because many services have accounts, such as &#8216childcare account&#8217 and &#8216personal tax account&#8217</li>
+                  <li>allows us to label services with return journeys and account-like functionality as &#8216your accounts&#8217 in a user&#39s GOV.UK One Login</li>
+              </ul>
+
+              <p class="govuk-body">Examples:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                  <li>Create a GOV.UK One Login</li>
+                  <li>Sign in to your GOV.UK One Login</li>
+                  <li>You need a GOV.UK One Login to use this service</li>
+                  <li>Use your GOV.UK One Login details to sign in to personal tax account</li>
+                  <li>GOV.UK One Login is new</li>
+              </ul>
+              
+              
+              <p class="govuk-body">  Never use:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                  <li>One Login (without &#8216GOV.UK&#8217)</li>
+                  <li>GOV.UK One Sign In/Sign On</li>
+                  <li>GOV.UK One Log In/Log On</li>
+                  <li>GOV.UK One Login account</li>
+                  <li>One Login for government</li>
+                  <li>single sign-on for government</li>
+                  <li>GOV.UK OneLogin/OneLogin</li>
+              </ul>'
+      }
+    },
+    {
+      heading: {
+        text: "H"
+      },
+      content: {
+        html: ' <p class="govuk-body"><strong> </strong></p>
+        <p class="govuk-body"> </p>'
+      }
+    },
+    {
+      heading: {
+        text: "I"
+      },
+      content: {
+        html: ' <p class="govuk-body"><strong>identity verification</strong></p>
+        <p class="govuk-body">Lower case.</p>
+        <p class="govuk-body">Always write in full. Do not abbreviate to IDV.</p>
+        <br>
+        <p class="govuk-body"><strong>identity verification statement</strong></p><p class="govuk-body">Lower case. </p>
+        
+        '
+      }
+    },
+    {
+      heading: {
+        text: "J"
+      },
+      content: {
+        html: ' <p class="govuk-body"><strong> </strong></p>
+        <p class="govuk-body"> </p>'
+      }
+    },
+    {
+      heading: {
+        text: "K"
+      },
+      content: {
+        html: ' <p class="govuk-body"><strong> </strong></p>
+        <p class="govuk-body"> </p>'
+      }
+    },
+    {
+      heading: {
+        text: "L"
+      },
+      content: {
+        html: ' <p class="govuk-body"><strong>list of Companies House authorised agents <strong class="govuk-tag govuk-tag--yellow">
+          TBC
+        </strong></strong></p>
+        <p class="govuk-body">Title case for Companies House, lower case for authorised agents and ‘list’.  </p>'
+      }
+    },
+    {
+      heading: {
+        text: "M"
+      },
+      content: {
+        html: ' <p class="govuk-body"><strong> </strong></p>
+        <p class="govuk-body"> </p>'
+      }
+    },
+    {
+      heading: {
+        text: "N"
+      },
+      content: {
+        html: ' <p class="govuk-body"><strong> </strong></p>
+        <p class="govuk-body"> </p>'
+      }
+    },
+    {
+      heading: {
+        text: "O"
+      },
+      content: {
+        html: ' <p class="govuk-body"><strong> </strong></p>
+        <p class="govuk-body"> </p>'
+      }
+    },
+    {
+      heading: {
+        text: "P"
+      },
+      content: {
+        html: ' 
+        <p class="govuk-body"><strong>photo ID</strong></p><p class="govuk-body">Lower case for &#8216photo&#8217. Upper case for &#8216ID&#8217. </p>
+       <br>
+        <p class="govuk-body"><strong>Post Office</strong></p>
+        <p class="govuk-body">Title case for first letters. </p>
+        <br>
+        <p class="govuk-body"><strong>presenter</strong></p>
+        <p class="govuk-body">See &#8216filer&#8217.</p>'
+      }
+    },
+    {
+      heading: {
+        text: "Q"
+      },
+      content: {
+        html: ' <p class="govuk-body"><strong> </strong></p>
+        <p class="govuk-body"> </p>'
+      }
+    },
+    {
+      heading: {
+        text: "R"
+      },
+      content: {
+        html: ' <p class="govuk-body"><strong></strong></p>
+        <p class="govuk-body"> </p>'
+      }
+    },
+    {
+      heading: {
+        text: "S"
+      },
+      content: {
+        html: ' <p class="govuk-body"><strong>security code</strong></p>
+        <p class="govuk-body">This is a code that is sent to a user as part of the 2 factor authentication process when accessing a service. It is sent either by text message or authenticator app.</p>
+        <p class="govuk-body">Never use:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                  <li>2-factor authentication</li>
+                  <li>2 step verification</li>
+                  <li>one time code</li>
+                  <li>OTC</li>
+                  <li>one time passcode</li>
+                  <li>OTP</li>
+                  <li>confirmation code</li>
+              </ul>'
+      }
+    },
+    {
+      heading: {
+        text: "T"
+      },
+      content: {
+        html: ' <p class="govuk-body"><strong> </strong></p>
+        <p class="govuk-body"> </p>'
+      }
+    },
+    {
+      heading: {
+        text: "U"
+      },
+      content: {
+        html: ' <p class="govuk-body"><strong>UVID</strong></p>
+        <p class="govuk-body">Never use UVID. See &#8216Companies House personal code&#8217.</p>'
+      }
+    },
+    {
+      heading: {
+        text: "V"
+      },
+      content: {
+        html: ' 
+        
+        <p class="govuk-body"><strong>verified identity</strong></p>
+        <p class="govuk-body">Lower case.</p>
+        <br>
+        <p class="govuk-body"><strong>verification deadline</strong></p>
+        <p class="govuk-body">Lower case.</p>
+        <br>
+        <p class="govuk-body"><strong>verification details</strong></p>
+        <p class="govuk-body">Lower case.</p> 
+        <br>
+        <p class="govuk-body"><strong>verify your identity</strong></p>
+        <p class="govuk-body">Lower case.</p>
+        <p class="govuk-body">Write in full - only use &#8216verify&#8217 on its own if it&#39s clear you&#39re talking about verifying identity.</p>'
+      }
+    },
+    {
+      heading: {
+        text: "W"
+      },
+      content: {
+        html: ' <p class="govuk-body"><strong> </strong></p>
+        <p class="govuk-body"> </p>'
+      }
+    },
+    {
+      heading: {
+        text: "X"
+      },
+      content: {
+        html: ' <p class="govuk-body"><strong> </strong></p>
+        <p class="govuk-body"> </p>'
+      }
+    },
+    {
+      heading: {
+        text: "Y"
+      },
+      content: {
+        html: ' <p class="govuk-body"><strong> </strong></p>
+        <p class="govuk-body"> </p>'
+      }
+    },
+    {
+      heading: {
+        text: "Z"
+      },
+      content: {
+        html: ' <p class="govuk-body"><strong> </strong></p>
+        <p class="govuk-body"> </p>'
+      }
+    }
+  ]
+}) }}
+
+
+
+
+
+
+{% endblock %}

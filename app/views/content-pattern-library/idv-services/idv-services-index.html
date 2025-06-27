@@ -1,0 +1,45 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+    <h1 class="govuk-heading-xl">
+      IDV services</h1>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          <a href="/idv-services/verify-your-identity" class="govuk-link govuk-link--no-visited-state">Verify your identity for Companies House</a>
+        </li>
+        <li>
+          <a href="/idv-services/apply-to-register-as-agent" class="govuk-link govuk-link--no-visited-state">Apply to register as a Companies House authorised agent</a>
+        </li>
+        <li>
+          <a href="/idv-services/tell-ch-verified-identity" class="govuk-link govuk-link--no-visited-state">Tell Companies House you have verified someone’s identity </a>
+        </li>
+        <li>
+          <a href="/idv-services/provide-idv-details" class="govuk-link govuk-link--no-visited-state">Provide identity verification details for a person with significant control
+        </li>
+        <li>
+          <a href="/idv-services/cross-service" class="govuk-link govuk-link--no-visited-state">Front-end filing – CS01, PSC01, AD01, SCRS
+          </a>
+        </li>
+        <li>
+          <a href="/idv-services/idam" class="govuk-link govuk-link--no-visited-state">IDAM - account migration to GOV.UK One Login </a>
+        </li>
+        <!--
+        <li>
+          <a href="/idv-services/idv-sign-in" class="govuk-link govuk-link--no-visited-state">IDV sign in</a>
+        </li>-->
+  </ul>
+
+ 
+
+  </div>
+</div>
+{% endblock %}

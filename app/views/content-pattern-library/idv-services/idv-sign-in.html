@@ -1,0 +1,39 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+    <h1 class="govuk-heading-xl">IDV sign in</h1>
+
+    {{ govukWarningText({
+      text: "This prototype is no longer being implemented.",
+      iconFallbackText: "Warning"
+    }) }}
+     
+    <h2 class="govuk-heading-m">Prototype details</h2>
+
+    <p class="govuk-body">
+    <a href="https://idv-sign-in-prototype-7fe752c06ff9.herokuapp.com/" class="govuk-link--no-visited-state">https://idv-sign-in-prototype-7fe752c06ff9.herokuapp.com/</a>
+      </p>
+
+    <p><strong>Password:</strong> sign-in  </p>
+      
+
+
+    <h2 class="govuk-heading-m">Description</h2>
+
+<p>This service enables people to connect the email address they verified with to their identity, if they verified using an authorised agent.</p>
+    
+
+
+
+
+  </div>
+</div>
+{% endblock %}
