@@ -8,50 +8,31 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds-from-desktop">
       <form action="/auth-code" method="post">
-        {% if errorAuth == true %}
-          {{ govukErrorSummary({
-            titleText: "There is a problem",
-            errorList: errorList
-          }) }}
-          {{ govukInput({
-            label: {
-              text: "Enter the company authentication code",
-              classes: "govuk-label--l"
-            },
-            classes: "govuk-input--width-10",
-            hint: {
-              text: "You need the authentication code to submit company information for COMPANY NAME."
-            },
-            id: "authNumber",
-            name: "authNumber",
-            type: "password",
-            errorMessage: {
-              text: "Enter the company authentication code"
-            }
-          }) }}
-        {% else %}
-          {{ govukInput({
-          label: {
-            text: "Enter the company authentication code",
-            classes: "govuk-label--l"
-          },
-          classes: "govuk-input--width-10",
-          hint: {
-            text: "This is a 6 character code issued by us to each company. You need the code to authorise online filings for COMPANY NAME."
-          },
-          id: "authNumber",
-          name: "authNumber",
-          type: "password"
-          }) }}
-        {% endif %}
-        {{ govukDetails({
-          summaryText: "I do not have an authentication code",
-          html: "<p>To file online for this company, you’ll need to <a target='blank' href='https://www.gov.uk/guidance/company-authentication-codes-for-online-filing'>request an authentication code (opens in a new tab)</a>.<p>"
-         }) }}
-        {{ govukButton({
-         text: "Continue"
-        }) }}
-      </form>
-    </div>
+
+<span class="govuk-caption-l">THE GIRLS' DAY SCHOOL TRUST (00006400)</span>
+<h1 class="govuk-heading-l">Enter the company authentication code</h1>
+
+<div class="govuk-form-group">
+    <div id="auth-code-hint" class="govuk-hint">
+    This is a 6 character code issued by us to each company. The code is used to authorise online filings.
   </div>
+  <input class="govuk-input govuk-input--width-10" id="width-10" name="width10" type="text">
+</div>
+
+<details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      I do not have an authentication code
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+  You'll need to <a href="https://identity.company-information.service.gov.uk/company/00006400/authcode/request?request=eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiZGlyIn0..rX21Ux6eTkTicmDzBCPLxg.847hzcFgYVDh2LkO-4Rg9zmH88u6GWrh56WnH-3DVpiHABru_S4UJiF9M720AyMh2A2oGxreGjzft_9jQXh1zI23V08brWCbvrQxSNseNqazKXbDLI6nPyZ6PBbxXis_8gvkP1XaakUrqdBWuPakESJzXoCV716T-5VQYVlYpF6PKUUov0JNJKWUXZsbEef3-TVZmFAKT2iEyBHFOV-oe0UksPZKuLXac3RND2QHUt-fc4XcO42HgzpSFWX1XNhHbxXGlq_a4DaEThxiL600fplFm8Xi8AkCIMyBEqjYBQt_soQG9FWnjazwHTuoTJW82XSJ1jx0cw3s4A8gibOMYq9c9kUrHsjYRCPntdae56Onp0RRIfuH0JzrJPZXMWUXPFXg7NoDtjB5E_deJ5utDFJWi_P36O2K8taMAdmmh9jt46hMmP4ennO2nj1xtxSHhF39UhB1Lhqw7TgDmQQh55StiKmxarpdCfifsiKnjmo7Ar4Ok5k3VFqHLctVTC9Ia1gNScwlmbct9j2uj6tD-B3nvdLvH7p-G3TPet-J-3uJPXuxeowwtu6KuEUYu3I7vXOy_uj9689zB5x8H_owt000uK1ZV4jNmJbiISIwMXnxtqTxlw0Vabfvtm1IqKOycskoP6-n9SLpyT4cSBzyL3LmDBl-HHuSpuWz0kL5WwM3aULlk-AUN7LGWeovwI_5btEjULyetTHXeC2oNHFuB49fRT8axOcHkO1WkZHoK4z3ygI2_RFwdhI4AjiSbzEjCtLL2e3D7rJeicYFTMu3aq8DouAQ2hO_DuFo6yox4hv_kHSIAmcFME5QxhED7syDVZBZ7YFAZehLnMA5IFmgdNmU3IAd4ZvSx1xMBC-2ASqA7sEhi29ZWl6bz8eiwGMXmmF75q0bgQbK9jRtzJmlsMyDpooTv3eMcVrtdVDqO8FMKCaPsQ-J-Jh4wqgoR6tKVBHKA262ZePTPWq23Naq2wwH5IboFS3xGz9grtDkA7ApHuHDVQlReA5DJPXHfkl1HD2lAVpmlOHYCVab6fshXYT1tl2NURa9ovmkGfk09QJLmY7iNlQ7RvCgryI0oUiwinIR8ETzfv3GZ8n5HguZpqr6HzMBI3WNUmTFoHcDT-DyzA_uMEaKdeGB-No9xKAXa2ff3QOZUaIQvIeSJ-PbLZzYE6VY3Lzjqb6jWmiEYwU.NJ-AlahX8cW83gxTdXCUDA" class="govuk-link govuk-link--no-visited-state">request an authentication code</a>. It is sent by post.
+  </div>
+</details>
+
+<button type="submit" class="govuk-button" data-module="govuk-button">
+  Continue
+</button>
+    
+
 {% endblock %}
