@@ -13,13 +13,21 @@
       <div class="govuk-grid-column-two-thirds">
       <form action="/check-company-details" method="post" novalidate>
 
-      <h1 class="govuk-heading-xl">Confirm this is the correct company</h1>
+      <h1 class="govuk-heading-l">Confirm this is the correct company</h1>
 
-      <h2 class="govuk-heading-l">ABC LIMITED</h2>
+  
 
       {{ govukSummaryList({
         classes: 'govuk-!-margin-bottom-9',
         rows: [
+        {
+            key: {
+              text: "Company name"
+            },
+            value: {
+              text: "ABC LIMITED"
+            }
+          },
           {
             key: {
               text: "Company number"
@@ -73,7 +81,9 @@
 
     </form>
   </div>
-
+  <strong class="govuk-tag govuk-tag--teal">
+          Last updated: <br> 25 Feb 2026
+        </strong>
   </div>
   </div>
 </div>
